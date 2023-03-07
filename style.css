@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/sharp-sans');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-2');
 
@@ -5,6 +7,13 @@ body {
     background: #000000;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
 
 
 #image p {
@@ -24,45 +33,49 @@ span {
 }
 
 #container {
-    position: absolute;
-    left: 10em;
-    display: inline-block;
+    flex: 1;
     background-color: #181818;
     text-align: center;
     width: 35em;
     height: 35em;
-    top: 78em;
+    max-width: 70em;
+    max-height: 70em;
     transition: 1s;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 0.5em;
 }
 
 #container p2 {
     color: white;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    font-weight: 400;
+    font-family: 'Sharp Sans', sans-serif;
+    font-weight: 500;
     font-size: 2em;
     position: relative;
-    top: 1em;
+    top: 45%;
 }
 
 #container-2 {
-    position: absolute;
-    right: 10em;
-    display: inline-block;
+    flex: 1;
     background-color: #181818;
     text-align: center;
     width: 35em;
     height: 35em;
-    top: 78em;
+    max-width: 70em;
+    max-height: 70em;
     transition: 1s;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 0.5em;
 }
 
 #container-2 p3 {
     color: white;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    font-weight: 400;
+    font-family: 'Sharp Sans', sans-serif;
+    font-weight: 500;
     font-size: 2em;
     position: relative;
-    top: 1em;
+    top: 45%;
 }
 
 #logo {
@@ -97,8 +110,8 @@ span {
 
 #bottom {
     position: absolute;
-    width: 35em;
-    height: 35em;
+    width: 30em;
+    height: 30em;
     top: 92em;
 }
 
@@ -106,10 +119,51 @@ span {
   transform: perspective(3000px) rotateY(30deg);
   transition: 1s;
   transition-timing-function: ease-in-out;
+  background: #b344ff;
+  box-shadow: 0px 0px 1em 0em #b344ff;
 }
 
 #container-2:hover {
     transform: perspective(3000px) rotateY(-30deg);
     transition: 1s;
     transition-timing-function: ease-in-out;
-  }
+    background: #b344ff;
+    box-shadow: 0px 0px 1em 0em #b344ff;
+}
+
+#containerholder {
+    position: absolute;
+    width: 99.4%;
+    display: flex;
+    top: 78em;
+    height: 100px;
+    flex-direction: row;
+}
+
+.scroll-down {
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    left: 49%;
+    bottom: 3em;
+    cursor: pointer;
+    background: url("https://www.samsung.com/global/galaxy/common/images/bg_topbutton.png");
+    background-size: 3em;
+    transform: rotate(180deg) scale(120%);
+    transition: 0.5s;
+    border: 2px solid #FFFFFF;
+    border-radius: 3.2em;
+    opacity: 0.8;
+}
+
+.scroll-down:hover {
+    transform: scale(150%) rotate(180deg);
+    transition-timing-function: ease-in-out;
+    transition: 0.7s;
+    border: 2px solid black;
+}
+
+a {
+    color: transparent;
+    text-decoration: none;
+}
