@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.cdnfonts.com/css/helvetica-2');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
-    background: #000000;
+    background: #161617;
 }
 
 body::-webkit-scrollbar{
@@ -35,7 +36,7 @@ span {
 
 #container {
     flex: 1;
-    background-color: #181818;
+    background-color: #080404;
     text-align: center;
     width: 35em;
     height: 35em;
@@ -49,7 +50,7 @@ span {
 
 #container p2 {
     color: white;
-    font-family: Poppins,sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 2em;
     position: relative;
@@ -58,7 +59,7 @@ span {
 
 #container-2 {
     flex: 1;
-    background-color: #181818;
+    background-color: #080404;
     text-align: center;
     width: 35em;
     height: 35em;
@@ -72,7 +73,7 @@ span {
 
 #container-2 p3 {
     color: white;
-    font-family: Poppins,sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 2em;
     position: relative;
@@ -85,16 +86,6 @@ span {
     padding-top: 2em;
     padding-left: 2em;
     width: 20em;
-}
-
-#topbar {
-    background: #000000;
-    position: absolute;
-    width: 100%;
-    left: 0px;
-    height: 6em;
-    top: 0em;
-    box-shadow: 0px 0px 1em 0.08em #000000;
 }
 
 #image {   
@@ -119,6 +110,28 @@ span {
     background-size: 100%;
     background-position-y: 40%;
     z-index: -1;
+}
+
+#image-3 {   
+    position: absolute;
+    top: 0em;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2012/andromedawan.jpg");
+    background-size: 100%;
+    background-position-y: 40%;
+    z-index: -1;
+}
+
+#image-3 p {
+    position: relative;
+    top: 45%;
+    font-family: Poppins,sans-serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-align: center;
+    color: white;
 }
 
 #image-2 p {
@@ -158,6 +171,8 @@ span {
     position: absolute;
     width: 99.4%;
     display: flex;
+    justify-content: center;
+    gap: 5em;
     top: 78em;
     height: 100px;
     flex-direction: row;
@@ -216,9 +231,9 @@ a {
 }
 
 #information-1 {
-    flex: 1;
-    background-color: #181818;
     color: white;
+    background: #080404;
+    align-items: center;
     width: 35em;
     height: 35em;
     max-width: 35em;
@@ -227,46 +242,108 @@ a {
     margin-right: 5em;
     border-radius: 0.5em;
     text-align: left;
-    padding: 1em;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    padding: 2em;
 }
 
 #information-1 p4 {
     position: relative;
     font-size: 2em;
-    font-family: Poppins,sans-serif;
     top: 1em;
     left: 1em;
 }
 
 #information-1 p5 {
-    font-family: Poppins,sans-serif;
     position: relative;
     top: 3em;
 }
 
-.home {
+#information-2 {
+    color: white;
+    background: #080404;
+    align-items: center;
+    width: 35em;
+    height: 35em;
+    max-width: 35em;
+    max-height: 35em;
+    margin-left: 5em;
+    margin-right: 5em;
+    border-radius: 0.5em;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    padding: 2em;
+}
+
+#information-2 p4 {
+    position: relative;
+    font-size: 2em;
+    top: 1em;
+    left: 0.5em;
+}
+
+#information-2 p5 {
+    position: relative;
+    top: 3em;
+}
+
+#topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 3.5em;
+    background: #080404;
     position: absolute;
+    width: 100vw;
+    left: 0px;
+    height: 6em;
+    top: 0em;
+    box-shadow: 0px 0px 1em 0.08em #080404;
+}
+
+.home {
     font-family: Poppins,sans-serif;
     color: white;
-    top: 0%;
-    margin: 0%;
     margin-top: 1.5em;
-    right: 20em;
     font-size: 1.5em;
     z-index: 2;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .milkyway {
-    position: absolute;
     font-family: Poppins,sans-serif;
     color: white;
-    top: 0%;
-    margin: 0%;
     margin-top: 1.5em;
-    right: 13em;
     font-size: 1.5em;
     z-index: 2;
-    border: 2px solid #b344ff;
-    border-radius: 2em;
-    border-spacing: 10px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.andromeda {
+    font-family: Poppins,sans-serif;
+    color: white;
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    z-index: 2;
+    transition: 0.5s;
+    margin-right: 2em;
+    transition-timing-function: ease-in-out;
+}
+
+.andromeda:hover {
+    opacity: 0.5;
+    transform: scale(120%);
+}
+
+.milkyway:hover {
+    opacity: 0.5;
+    transform: scale(120%);
+}
+
+.home:hover {
+    opacity: 0.5;
+    transform: scale(120%);
 }
