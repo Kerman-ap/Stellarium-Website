@@ -17,17 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
-#image p {
-    position: relative;
-    top: 45%;
-    font-family: Poppins,sans-serif;
-    font-size: 2.75em;
-    font-weight: 900;
-    text-align: center;
-    color: white;
-}
-
 span {
     background: linear-gradient(180deg,#ffb6ff,#b344ff);
     background-clip: text;
@@ -101,6 +90,16 @@ span {
     z-index: -1;
 }
 
+#image p {
+    position: relative;
+    top: 45%;
+    font-family: Poppins,sans-serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
 #image-2 {   
     position: absolute;
     top: 0em;
@@ -111,6 +110,16 @@ span {
     background-size: 100%;
     background-position-y: 40%;
     z-index: -1;
+}
+
+#image-2 p {
+    position: relative;
+    top: 45%;
+    font-family: Poppins,sans-serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-align: center;
+    color: white;
 }
 
 #image-3 {   
@@ -135,7 +144,85 @@ span {
     color: white;
 }
 
-#image-2 p {
+#image-4 {   
+    position: absolute;
+    top: 0em;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://cdn.britannica.com/73/124973-050-096A8589/Halleys-Comet-1986.jpg");
+    background-size: 100%;
+    background-position-y: 40%;
+    z-index: -1;
+}
+
+#image-4 p {
+    position: relative;
+    top: 45%;
+    font-family: Poppins,sans-serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+#image-5 {   
+    position: absolute;
+    top: 0em;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://www.wired.com/wp-content/uploads/2022/06/Asteroid-Belt-Up-Against-It-Culture-460713865.jpg");
+    background-size: 100%;
+    background-position-y: 40%;
+    z-index: -1;
+}
+
+#image-5 p {
+    position: relative;
+    top: 45%;
+    font-family: Poppins,sans-serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+#image-6 {   
+    position: absolute;
+    top: 0em;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1200px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg");
+    background-size: 100%;
+    background-position-y: 40%;
+    z-index: -1;
+}
+
+#image-6 p {
+    position: relative;
+    top: 45%;
+    font-family: Poppins,sans-serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+#image-7 {   
+    position: absolute;
+    top: 0em;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/07/SolarFull_SeanDoran_2880FullwidthLede.jpg");
+    background-size: 100%;
+    background-position-y: 40%;
+    z-index: -1;
+}
+
+#image-7 p {
     position: relative;
     top: 45%;
     font-family: Poppins,sans-serif;
